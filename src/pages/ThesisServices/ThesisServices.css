@@ -1,0 +1,75 @@
+/* ===== THESIS SERVICES GRID ===== */
+.thesis-services__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* ===== TIMELINE ===== */
+.thesis-timeline__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.timeline-card {
+  background: var(--white);
+  padding: 40px 32px;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--gray-100);
+  text-align: center;
+  transition: var(--transition-base);
+  position: relative;
+}
+
+.timeline-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-100);
+}
+
+.timeline-card__icon {
+  width: 56px;
+  height: 56px;
+  background: var(--primary-50);
+  color: var(--primary-600);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.timeline-card__phase {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--gray-800);
+  margin-bottom: 12px;
+}
+
+.timeline-card__duration {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px;
+  background: var(--accent-50);
+  color: var(--accent-700);
+  border-radius: var(--radius-full);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.timeline-card__check {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: var(--accent-400);
+}
+
+@media (max-width: 768px) {
+  .thesis-timeline__cards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

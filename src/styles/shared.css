@@ -1,0 +1,247 @@
+/* ===== SHARED PAGE HERO (inner pages) ===== */
+.page-hero {
+  position: relative;
+  padding: 160px 0 120px;
+  overflow: hidden;
+}
+
+.page-hero__bg {
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-hero);
+}
+
+.page-hero__blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.5;
+}
+
+.page-hero__blob--1 {
+  width: 400px;
+  height: 400px;
+  background: var(--primary-100);
+  top: -20%;
+  right: -5%;
+  animation: blob 8s ease-in-out infinite;
+}
+
+.page-hero__blob--2 {
+  width: 350px;
+  height: 350px;
+  background: var(--accent-100);
+  bottom: -10%;
+  left: -5%;
+  animation: blob 8s ease-in-out infinite 2s;
+}
+
+.page-hero__grid-pattern {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(14, 116, 184, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(14, 116, 184, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.page-hero__container {
+  position: relative;
+  z-index: 1;
+}
+
+.page-hero__breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--gray-500);
+  margin-bottom: 24px;
+}
+
+.page-hero__breadcrumb a {
+  color: var(--primary-600);
+  font-weight: 500;
+}
+
+.page-hero__breadcrumb a:hover {
+  color: var(--primary-700);
+}
+
+.page-hero__content {
+  max-width: 700px;
+  animation: fadeInUp 0.7s ease-out;
+}
+
+.page-hero__title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 900;
+  color: var(--gray-900);
+  margin-bottom: 16px;
+  line-height: 1.15;
+}
+
+.page-hero__title span {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.page-hero__subtitle {
+  font-size: 1.15rem;
+  color: var(--gray-600);
+  line-height: 1.7;
+  margin-bottom: 32px;
+  max-width: 560px;
+}
+
+.page-hero__wave {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.page-hero__wave svg {
+  width: 100%;
+  height: 80px;
+  display: block;
+}
+
+/* ===== SHARED CTA ===== */
+.cta {
+  position: relative;
+  padding: 100px 0;
+  background: var(--gradient-cta);
+  overflow: hidden;
+}
+
+.cta__bg {
+  position: absolute;
+  inset: 0;
+}
+
+.cta__blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+}
+
+.cta__blob--1 {
+  width: 400px;
+  height: 400px;
+  background: rgba(20, 201, 168, 0.15);
+  top: -20%;
+  right: -5%;
+}
+
+.cta__blob--2 {
+  width: 350px;
+  height: 350px;
+  background: rgba(14, 116, 184, 0.2);
+  bottom: -20%;
+  left: -5%;
+}
+
+.cta__container {
+  position: relative;
+  z-index: 1;
+}
+
+.cta__content {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cta__title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.cta__text {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 32px;
+  line-height: 1.7;
+}
+
+/* ===== SHARED THESIS CARD (used by thesis + publication pages) ===== */
+.thesis-card {
+  background: var(--white);
+  padding: 32px 28px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--gray-100);
+  transition: var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.thesis-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+  border-color: transparent;
+}
+
+.thesis-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.thesis-card__icon {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thesis-card__number {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--gray-100);
+}
+
+.thesis-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--gray-800);
+  margin-bottom: 10px;
+}
+
+.thesis-card__desc {
+  font-size: 0.88rem;
+  color: var(--gray-500);
+  line-height: 1.7;
+}
+
+.thesis-card__bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  opacity: 0;
+  transition: var(--transition-base);
+}
+
+.thesis-card:hover .thesis-card__bar {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    padding: 130px 0 80px;
+  }
+}
