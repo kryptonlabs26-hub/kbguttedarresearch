@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Stethoscope, Mail, Phone, MapPin, ArrowUpRight, Heart } from 'lucide-react';
+import { Stethoscope, Mail, Phone, MapPin, ArrowUpRight, Heart, User } from 'lucide-react';
 import './Footer.css';
 
 const quickLinks = [
@@ -30,8 +30,8 @@ export default function Footer() {
                   <Stethoscope size={20} />
                 </div>
                 <div className="footer__logo-text">
-                  <span className="footer__logo-name">MedResearch</span>
-                  <span className="footer__logo-tag">Pro</span>
+                  <span className="footer__logo-name">B.G.Doctor Global Research and Academic Solution</span>
+                  
                 </div>
               </Link>
               <p className="footer__desc">
@@ -39,11 +39,14 @@ export default function Footer() {
                 and academic publication support.
               </p>
               <div className="footer__contact-items">
-                <a href="mailto:info@medresearchpro.com" className="footer__contact-item">
-                  <Mail size={16} /> info@medresearchpro.com
+                <div className="footer__contact-item">
+                  <User size={16} /> Basalingappa
+                </div>
+                <a href="mailto:basalingappa1987@gmail.com" className="footer__contact-item">
+                  <Mail size={16} /> basalingappa1987@gmail.com
                 </a>
-                <a href="tel:+919876543210" className="footer__contact-item">
-                  <Phone size={16} /> +91 98765 43210
+                <a href="tel:+917899193404" className="footer__contact-item">
+                  <Phone size={16} /> +91 78991 93404
                 </a>
                 <div className="footer__contact-item">
                   <MapPin size={16} /> India

@@ -14,13 +14,20 @@ const serviceOptions = [
   'Research Paper Writing',
   'Publication Support',
   'Journal Submission',
+  'Book Writing and Publications',
+  'Patent Registration and file to grand',
+  'Design Patent',
+  'Utility Design Patent',
+  'UK Utility Patent',
+  'UK Design Patent',
   'Other',
 ];
 
 const contactInfo = [
-  { icon: <Phone size={22} />, label: 'Phone Number', value: '+91 98765 43210', href: 'tel:+919876543210' },
-  { icon: <MessageCircle size={22} />, label: 'WhatsApp', value: '+91 98765 43210', href: 'https://wa.me/919876543210' },
-  { icon: <Mail size={22} />, label: 'Email Address', value: 'info@medresearchpro.com', href: 'mailto:info@medresearchpro.com' },
+  { icon: <User size={22} />, label: 'Contact Person', value: 'Basalingappa', href: null },
+  { icon: <Phone size={22} />, label: 'Phone Number', value: '+91 78991 93404', href: 'tel:+917899193404' },
+  { icon: <MessageCircle size={22} />, label: 'WhatsApp', value: '+91 78991 93404', href: 'https://wa.me/917899193404' },
+  { icon: <Mail size={22} />, label: 'Email Address', value: 'basalingappa1987@gmail.com', href: 'mailto:basalingappa1987@gmail.com' },
   { icon: <Clock size={22} />, label: 'Working Hours', value: 'Mon–Fri: 9AM–7PM, Sat: 10AM–5PM', href: null },
 ];
 
@@ -214,7 +221,7 @@ export default function Contact() {
                 <div className="contact-map__placeholder">
                   <MapPin size={32} color="var(--primary-500)" />
                   <p>Our Location</p>
-                  <span>India</span>
+                  <span>MALASAMUDRA GADAG 582103</span>
                 </div>
               </div>
             </div>

@@ -35,8 +35,8 @@ export default function Navbar() {
             <Stethoscope size={22} />
           </div>
           <div className="navbar__logo-text">
-            <span className="navbar__logo-name">MedResearch</span>
-            <span className="navbar__logo-tag">Pro</span>
+            <span className="navbar__logo-name">B.G.Doctor Global Research</span>
+            <span className="navbar__logo-tag"> & Academic Solution</span>
           </div>
         </Link>
 

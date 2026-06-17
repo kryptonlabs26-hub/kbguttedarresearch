@@ -2,7 +2,8 @@ import { Link } from 'react-router-dom';
 import {
   FileText, BookMarked, Stethoscope, PenLine, Search, Globe,
   Database, Upload, MessageSquare, Eye, ArrowRight, Send,
-  Sparkles, ChevronRight, CheckCircle2, ExternalLink
+  Sparkles, ChevronRight, CheckCircle2, ExternalLink,
+  Book, BookOpen, Award, MapPin, Shield
 } from 'lucide-react';
 import './PublicationServices.css';
 
@@ -17,6 +18,16 @@ const services = [
   { icon: <Upload size={26} />, title: 'Journal Submission Handling', desc: 'Complete manuscript submission support.', color: '#6366f1' },
   { icon: <MessageSquare size={26} />, title: 'Reviewer Comment Management', desc: 'Professional handling of reviewer comments and revisions.', color: '#f97316' },
   { icon: <Eye size={26} />, title: 'Publication Tracking', desc: 'Monitoring manuscript progress until publication.', color: '#22c55e' },
+  { icon: <Send size={26} />, title: 'Journal Publication', desc: 'Web of Science journal publication support.', color: '#3b82f6' },
+  { icon: <FileText size={26} />, title: 'Systematic Review & Meta Analysis', desc: 'Paper writing and publications.', color: '#0e74b8' },
+  { icon: <BookMarked size={26} />, title: 'Original Research Article', desc: 'Writing and publications of original research articles.', color: '#8b5cf6' },
+  { icon: <Book size={26} />, title: 'Book Writing & Publication', desc: 'Comprehensive book writing and publication support.', color: '#14c9a8' },
+  { icon: <BookOpen size={26} />, title: 'Book Chapter Writing', desc: 'Writing and publications of book chapters.', color: '#f59e0b' },
+  { icon: <PenLine size={26} />, title: 'Review Article', desc: 'Writing and publications of review articles.', color: '#ef4444' },
+  { icon: <Award size={26} />, title: 'NMC Approved Journals', desc: 'High indexed journal publications under NMC Approval.', color: '#06b6d4' },
+  { icon: <Globe size={26} />, title: 'International & National Journals', desc: 'International and National high indexed journal publications.', color: '#ec4899' },
+  { icon: <MapPin size={26} />, title: 'State Level Journals', desc: 'State level high indexed journal publications.', color: '#6366f1' },
+  { icon: <Shield size={26} />, title: 'Patent Support', desc: 'Patent from Registration to Grant Support.', color: '#f97316' },
 ];
 
 const platforms = [

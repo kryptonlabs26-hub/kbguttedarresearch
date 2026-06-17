@@ -35,10 +35,12 @@ export default function About() {
               Dr. Basalingappa <span>B.G.</span>
             </motion.h1>
             <motion.div variants={fadeInUp} className="about-hero__roles">
-              <span className="about-hero__role">Researcher</span>
-              <span className="about-hero__role">Educator</span>
+              <span className="about-hero__role">Research consultant</span>
+              <span className="about-hero__role">Medical educator</span>
               <span className="about-hero__role">Author</span>
               <span className="about-hero__role">Innovator</span>
+              <span className="about-hero__role">Academic consultant</span>
+              <span className="about-hero__role">Patent Advisor</span>
             </motion.div>
             <motion.p variants={fadeInUp} className="about-hero__mission">
               Empowering researchers, healthcare professionals, and students through expert academic guidance, research support, publication assistance, and scientific innovation.
@@ -197,6 +199,16 @@ export default function About() {
               <h3 className="book-card__title">Molecular Biology and Analytical Techniques</h3>
               <p className="book-card__desc">Focused on competency-based learning, clinical correlation, analytical methods, and examination preparation.</p>
             </motion.div>
+            <motion.div variants={fadeInUp} className="book-card">
+              <div className="book-card__icon"><BookOpen size={28} /></div>
+              <h3 className="book-card__title">Molecular Symphony: Unveiling Biochemical Wonders</h3>
+              <p className="book-card__desc">An exploration into the biochemical wonders and molecular mechanisms of life.</p>
+            </motion.div>
+            <motion.div variants={fadeInUp} className="book-card">
+              <div className="book-card__icon"><BookOpen size={28} /></div>
+              <h3 className="book-card__title">Text-Book of Medical Biochemistry for MBBS Students</h3>
+              <p className="book-card__desc">1st Edition hand-made textbook tailored as per the new NMC CBME guidelines.</p>
+            </motion.div>
           </motion.div>
         </div>
       </section>
@@ -321,10 +333,39 @@ export default function About() {
                 <motion.span variants={fadeInUp} className="achievement-tag">Patent/Design Registration Contributor</motion.span>
                 <motion.span variants={fadeInUp} className="achievement-tag">Conference Participant</motion.span>
                 <motion.span variants={fadeInUp} className="achievement-tag">Academic Research Consultant</motion.span>
+                <motion.span variants={fadeInUp} className="achievement-tag">Workshop Partcipant</motion.span>
+                <motion.span variants={fadeInUp} className="achievement-tag">Journal Club Partcipant</motion.span>
               </div>
             </motion.div>
 
           </div>
+        </div>
+      </section>
+
+      {/* ===== GLOBAL AWARDS ===== */}
+      <section className="awards-section">
+        <div className="container">
+          <div className="section-header">
+            <h2 className="section-title">Global <span>Awards</span></h2>
+          </div>
+          
+          <motion.div 
+            className="awards__grid"
+            initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer}
+          >
+            <motion.div variants={fadeInUp} className="award-item">
+              <Award size={48} className="award-item__icon" />
+              <h3 className="award-item__title">UNITED STATES GLOBAL MERIT RECORD</h3>
+            </motion.div>
+            <motion.div variants={fadeInUp} className="award-item">
+              <Award size={48} className="award-item__icon" />
+              <h3 className="award-item__title">THE 2026 GLOBAL ICON AWARD</h3>
+            </motion.div>
+            <motion.div variants={fadeInUp} className="award-item">
+              <Award size={48} className="award-item__icon" />
+              <h3 className="award-item__title">PADMA SHREE GLOBAL EXCELLENCE AWARD 2026</h3>
+            </motion.div>
+          </motion.div>
         </div>
       </section>
 

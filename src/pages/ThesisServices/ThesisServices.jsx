@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import {
   Lightbulb, FileText, BookOpen, Table2, BarChart3, Calculator,
   PenTool, Palette, Presentation, ShieldCheck, ArrowRight, Send,
-  Sparkles, Clock, CheckCircle2, ChevronRight
+  Sparkles, Clock, CheckCircle2, ChevronRight, GraduationCap
 } from 'lucide-react';
 import './ThesisServices.css';
 
@@ -17,6 +17,7 @@ const services = [
   { icon: <Palette size={26} />, title: 'Graphical Abstract Design', desc: 'Visually engaging graphical summaries of research findings.', color: '#f97316' },
   { icon: <Presentation size={26} />, title: 'PPT Preparation', desc: 'Professional thesis defense and viva presentation support.', color: '#6366f1' },
   { icon: <ShieldCheck size={26} />, title: 'Plagiarism Verification', desc: 'Comprehensive originality checks and plagiarism reduction support.', color: '#22c55e' },
+  { icon: <GraduationCap size={26} />, title: 'PhD Degree Support', desc: 'PhD admission to Complete Doctoral Degree support.', color: '#8b5cf6' },
 ];
 
 const timeline = [
