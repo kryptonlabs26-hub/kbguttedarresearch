@@ -24,7 +24,7 @@ const serviceOptions = [
 ];
 
 const contactInfo = [
-  { icon: <User size={22} />, label: 'Contact Person', value: 'Basalingappa', href: null },
+  { icon: <User size={22} />, label: 'Contact Person', value: 'Dr. Basalingappa', href: null },
   { icon: <Phone size={22} />, label: 'Phone Number', value: '+91 78991 93404', href: 'tel:+917899193404' },
   { icon: <MessageCircle size={22} />, label: 'WhatsApp', value: '+91 78991 93404', href: 'https://wa.me/917899193404' },
   { icon: <Mail size={22} />, label: 'Email Address', value: 'basalingappa1987@gmail.com', href: 'mailto:basalingappa1987@gmail.com' },
@@ -222,6 +222,7 @@ export default function Contact() {
                   <MapPin size={32} color="var(--primary-500)" />
                   <p>Our Location</p>
                   <span>MALASAMUDRA GADAG 582103</span>
+                  <span>Karnataka, India</span>
                 </div>
               </div>
             </div>

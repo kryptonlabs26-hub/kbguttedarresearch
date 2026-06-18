@@ -41,6 +41,25 @@ export default function Navbar() {
         </Link>
 
         <div className={`navbar__links ${isMobileOpen ? 'navbar__links--open' : ''}`}>
+          <div className="navbar__mobile-header">
+            <Link to="/" className="navbar__logo" onClick={() => setIsMobileOpen(false)}>
+              <div className="navbar__logo-icon">
+                <Stethoscope size={22} />
+              </div>
+              <div className="navbar__logo-text">
+                <span className="navbar__logo-name">B.G.Doctor Global Research</span>
+                <span className="navbar__logo-tag"> & Academic Solution</span>
+              </div>
+            </Link>
+            <button
+              className="navbar__close-btn"
+              onClick={() => setIsMobileOpen(false)}
+              aria-label="Close menu"
+            >
+              <X size={24} />
+            </button>
+          </div>
+
           {navLinks.map(link => (
             <Link
               key={link.path}
@@ -61,14 +80,16 @@ export default function Navbar() {
           Get Consultation
         </Link>
 
-        <button
-          className="navbar__toggle"
-          onClick={() => setIsMobileOpen(!isMobileOpen)}
-          aria-label="Toggle menu"
-          id="nav-toggle"
-        >
-          {isMobileOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        {!isMobileOpen && (
+          <button
+            className="navbar__toggle"
+            onClick={() => setIsMobileOpen(true)}
+            aria-label="Toggle menu"
+            id="nav-toggle"
+          >
+            <Menu size={24} />
+          </button>
+        )}
       </div>
 
       {isMobileOpen && (

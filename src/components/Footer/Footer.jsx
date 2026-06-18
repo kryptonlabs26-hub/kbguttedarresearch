@@ -40,7 +40,7 @@ export default function Footer() {
               </p>
               <div className="footer__contact-items">
                 <div className="footer__contact-item">
-                  <User size={16} /> Basalingappa
+                  <User size={16} /> Dr. Basalingappa
                 </div>
                 <a href="mailto:basalingappa1987@gmail.com" className="footer__contact-item">
                   <Mail size={16} /> basalingappa1987@gmail.com
@@ -109,7 +109,7 @@ export default function Footer() {
       <div className="footer__bottom">
         <div className="container">
           <p className="footer__copyright">
-            © {new Date().getFullYear()} MedResearch Pro. All rights reserved. Made with <Heart size={14} className="footer__heart" /> for researchers.
+            © {new Date().getFullYear()} MedResearch Pro. All rights reserved. Developed by Krypton Labs.
           </p>
         </div>
       </div>

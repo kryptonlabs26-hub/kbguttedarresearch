@@ -34,6 +34,8 @@ const platforms = [
   { name: 'Scopus', desc: 'World\'s largest abstract and citation database', color: '#f59e0b' },
   { name: 'PubMed', desc: 'Premier biomedical literature database', color: '#0e74b8' },
   { name: 'DOAJ', desc: 'Directory of Open Access Journals', color: '#14c9a8' },
+  { name: 'Embase', desc: 'Comprehensive biomedical database', color: '#ef4444' },
+  { name: 'Web Of Science', desc: 'Leading global citation database', color: '#06b6d4' },
   { name: 'Indexed Journals', desc: 'Reputed indexed journal networks', color: '#8b5cf6' },
 ];
 

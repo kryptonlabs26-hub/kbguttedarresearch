@@ -333,8 +333,9 @@ export default function About() {
                 <motion.span variants={fadeInUp} className="achievement-tag">Patent/Design Registration Contributor</motion.span>
                 <motion.span variants={fadeInUp} className="achievement-tag">Conference Participant</motion.span>
                 <motion.span variants={fadeInUp} className="achievement-tag">Academic Research Consultant</motion.span>
-                <motion.span variants={fadeInUp} className="achievement-tag">Workshop Partcipant</motion.span>
-                <motion.span variants={fadeInUp} className="achievement-tag">Journal Club Partcipant</motion.span>
+                <motion.span variants={fadeInUp} className="achievement-tag">Workshop Participant</motion.span>
+                <motion.span variants={fadeInUp} className="achievement-tag">Journal Club Participant</motion.span>
+                <motion.span variants={fadeInUp} className="achievement-tag">Workshop and Journal Club</motion.span>
               </div>
             </motion.div>
 
