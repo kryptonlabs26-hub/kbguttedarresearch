@@ -34,6 +34,12 @@ export default function About() {
             <motion.h1 variants={fadeInUp} className="about-hero__title">
               Dr. Basalingappa <span>B.G.</span>
             </motion.h1>
+            <motion.h2 variants={fadeInUp} className="about-hero__subtitle">
+              FOUNDER & CEO
+            </motion.h2>
+            <motion.p variants={fadeInUp} className="about-hero__quote">
+              "You are the CEO of your life"
+            </motion.p>
             <motion.div variants={fadeInUp} className="about-hero__roles">
               <span className="about-hero__role">Research consultant</span>
               <span className="about-hero__role">Medical educator</span>
@@ -77,6 +83,135 @@ export default function About() {
               <motion.p variants={fadeInUp}>
                 His mission is to help students, researchers, and healthcare professionals achieve excellence in research, publication, and academic advancement through structured guidance and professional support.
               </motion.p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== QUICK ACHIEVEMENTS ===== */}
+      <section className="quick-achievements-section" id="quick-achievements">
+        <div className="container">
+          <motion.div 
+            className="section-header"
+            initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer}
+          >
+            <motion.h2 variants={fadeInUp} className="section-title">Major <span>Achievements</span></motion.h2>
+          </motion.div>
+          
+          <motion.div 
+            className="achievements-list__grid"
+            initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer}
+          >
+            <motion.div variants={fadeInUp} className="achievement-card-new">
+              <div className="achievement-card-new__badge">Award</div>
+              <h3 className="achievement-card-new__title">Young Scientist of the Year 2025</h3>
+              <p className="achievement-card-new__desc">National Award on Multidisciplinary Research & Innovation by MSME, Government of India</p>
+            </motion.div>
+
+            <motion.div variants={fadeInUp} className="achievement-card-new">
+              <div className="achievement-card-new__badge">Doctorate</div>
+              <h3 className="achievement-card-new__title">Honorary Doctorate in Medical Science</h3>
+              <p className="achievement-card-new__desc">Recognized for significant contributions and excellence in medical sciences research</p>
+            </motion.div>
+
+            <motion.div variants={fadeInUp} className="achievement-card-new">
+              <div className="achievement-card-new__badge">Books</div>
+              <h3 className="achievement-card-new__title">Author of 6 Published Books</h3>
+              <p className="achievement-card-new__desc">Academic textbook writer guiding medical and healthcare graduates</p>
+            </motion.div>
+
+            <motion.div variants={fadeInUp} className="achievement-card-new">
+              <div className="achievement-card-new__badge">Patent</div>
+              <h3 className="achievement-card-new__title">Published Patent in Innovation</h3>
+              <p className="achievement-card-new__desc">Contributor to pioneering healthcare and diagnostic system designs</p>
+            </motion.div>
+
+            <motion.div variants={fadeInUp} className="achievement-card-new">
+              <div className="achievement-card-new__badge">Articles</div>
+              <h3 className="achievement-card-new__title">4 Research Articles Published</h3>
+              <p className="achievement-card-new__desc">Published in reputable International Indexed Journals</p>
+            </motion.div>
+
+            <motion.div variants={fadeInUp} className="achievement-card-new">
+              <div className="achievement-card-new__badge">Mentor</div>
+              <h3 className="achievement-card-new__title">Medical Educator & Research Mentor</h3>
+              <p className="achievement-card-new__desc">Actively teaching and guiding PG, UG, allied health, and paramedical students</p>
+            </motion.div>
+
+            <motion.div variants={fadeInUp} className="achievement-card-new">
+              <div className="achievement-card-new__badge">Global</div>
+              <h3 className="achievement-card-new__title">Global Award Recipient</h3>
+              <p className="achievement-card-new__desc">Honored with prestigious international accolades for academic excellence</p>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ===== VISION, MISSION & VALUES ===== */}
+      <section className="vision-mission-section" id="vision-mission">
+        <div className="container">
+          <div className="vision-mission__grid">
+            <div className="vision-mission__statements">
+              <motion.div 
+                className="vision-card"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+              >
+                <div className="vision-card__icon">
+                  <Microscope size={28} />
+                </div>
+                <h3 className="vision-card__title">Our Vision</h3>
+                <p className="vision-card__text">
+                  "To be a trusted and globally recognized publication platform that advances knowledge, research excellence, and innovation."
+                </p>
+              </motion.div>
+
+              <motion.div 
+                className="mission-card"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.15 }}
+                viewport={{ once: true }}
+              >
+                <div className="mission-card__icon">
+                  <Lightbulb size={28} />
+                </div>
+                <h3 className="mission-card__title">Our Mission</h3>
+                <p className="mission-card__text">
+                  "To publish high-quality, peer-reviewed research while fostering ethical scholarship, knowledge sharing, and academic growth for the benefit of society."
+                </p>
+              </motion.div>
+            </div>
+
+            <motion.div 
+              className="core-values-card"
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7 }}
+              viewport={{ once: true }}
+            >
+              <h3 className="core-values__title">Our Core Values</h3>
+              <div className="core-values__grid">
+                {[
+                  { title: 'Excellence', desc: 'Striving for the highest quality in academic research and publication.' },
+                  { title: 'Integrity', desc: 'Upholding strict ethical standards, transparency, and honesty.' },
+                  { title: 'Innovation', desc: 'Encouraging novel solutions, modern methodologies, and smart technologies.' },
+                  { title: 'Transparency', desc: 'Clear communication, fair peer reviews, and open academic workflows.' },
+                  { title: 'Collaboration', desc: 'Fostering teamwork, global networking, and interdisciplinary study.' },
+                  { title: 'Academic Freedom', desc: 'Supporting independent thought, critical analysis, and open research.' },
+                  { title: 'Social Responsibility', desc: 'Contributing to society by sharing knowledge that improves human lives.' },
+                ].map((val, idx) => (
+                  <div className="core-value-item" key={idx}>
+                    <div className="core-value-item__marker" />
+                    <div>
+                      <h4 className="core-value-item__name">{val.title}</h4>
+                      <p className="core-value-item__desc">{val.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </motion.div>
           </div>
         </div>

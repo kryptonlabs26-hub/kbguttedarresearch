@@ -30,8 +30,8 @@ export default function Footer() {
                   <Stethoscope size={20} />
                 </div>
                 <div className="footer__logo-text">
-                  <span className="footer__logo-name">B.G.Doctor Global Research and Academic Solution</span>
-                  
+                  <span className="footer__logo-name">K.B.Guttedar</span>
+                  <span className="footer__logo-tag">Scientific Research Publication & Academic Solutions</span>
                 </div>
               </Link>
               <p className="footer__desc">

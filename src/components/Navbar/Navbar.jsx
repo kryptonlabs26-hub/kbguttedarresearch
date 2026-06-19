@@ -35,8 +35,8 @@ export default function Navbar() {
             <Stethoscope size={22} />
           </div>
           <div className="navbar__logo-text">
-            <span className="navbar__logo-name">B.G.Doctor Global Research</span>
-            <span className="navbar__logo-tag"> & Academic Solution</span>
+            <span className="navbar__logo-name">K.B.Guttedar</span>
+            <span className="navbar__logo-tag">Scientific Research & Academic Solutions</span>
           </div>
         </Link>
 
@@ -47,8 +47,8 @@ export default function Navbar() {
                 <Stethoscope size={22} />
               </div>
               <div className="navbar__logo-text">
-                <span className="navbar__logo-name">B.G.Doctor Global Research</span>
-                <span className="navbar__logo-tag"> & Academic Solution</span>
+                <span className="navbar__logo-name">K.B.Guttedar</span>
+                <span className="navbar__logo-tag">Scientific Research & Academic Solutions</span>
               </div>
             </Link>
             <button
