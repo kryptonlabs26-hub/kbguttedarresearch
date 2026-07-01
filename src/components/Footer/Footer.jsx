@@ -102,10 +102,14 @@ export default function Footer() {
       </div>
 
       <div className="footer__bottom">
-        <div className="container">
+        <div className="container footer__bottom-inner">
           <p className="footer__copyright">
             © {new Date().getFullYear()} MedResearch Pro. All rights reserved. Developed by Krypton Labs.
           </p>
+          <div className="footer__legal">
+            <Link to="/terms-and-conditions" className="footer__legal-link">Terms & Conditions</Link>
+            <Link to="/privacy-policy" className="footer__legal-link">Privacy Policy</Link>
+          </div>
         </div>
       </div>
     </footer>

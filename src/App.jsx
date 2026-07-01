@@ -7,6 +7,8 @@ import About from './pages/About/About';
 import ThesisServices from './pages/ThesisServices/ThesisServices';
 import PublicationServices from './pages/PublicationServices/PublicationServices';
 import Contact from './pages/Contact/Contact';
+import TermsAndConditions from './pages/TermsAndConditions/TermsAndConditions';
+import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
 import './App.css';
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
         <Route path="/thesis-services" element={<ThesisServices />} />
         <Route path="/publication-services" element={<PublicationServices />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
       <FloatingWhatsApp />
       <Footer />

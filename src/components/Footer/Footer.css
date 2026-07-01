@@ -159,6 +159,14 @@
   padding: 24px 0;
 }
 
+.footer__bottom-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
 .footer__copyright {
   text-align: center;
   font-size: 0.85rem;
@@ -173,6 +181,21 @@
 .footer__heart {
   color: #ef4444;
   fill: #ef4444;
+}
+
+.footer__legal {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__legal-link {
+  font-size: 0.85rem;
+  color: var(--gray-400);
+  transition: var(--transition-fast);
+}
+
+.footer__legal-link:hover {
+  color: var(--accent-400);
 }
 
 @media (max-width: 900px) {
