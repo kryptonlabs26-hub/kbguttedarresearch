@@ -42,6 +42,14 @@
   box-shadow: 0 4px 12px rgba(14, 116, 184, 0.25);
 }
 
+.navbar__image-logo {
+  height: 48px;
+  width: auto;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 2px 8px rgba(14, 116, 184, 0.15);
+  object-fit: contain;
+}
+
 .navbar__logo-text {
   display: flex;
   flex-direction: column;
@@ -213,6 +221,10 @@
     width: 36px;
     height: 36px;
     flex-shrink: 0;
+  }
+  
+  .navbar__image-logo {
+    height: 36px;
   }
   
   .navbar__mobile-header .navbar__logo-icon svg {

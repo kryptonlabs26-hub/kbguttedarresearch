@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Stethoscope } from 'lucide-react';
+import Logo from '../Logo/Logo';
 import './Navbar.css';
 
 const navLinks = [
@@ -31,25 +32,15 @@ export default function Navbar() {
     <nav className={`navbar ${isScrolled ? 'navbar--scrolled' : ''}`} id="main-navbar">
       <div className="navbar__container container">
         <Link to="/" className="navbar__logo" id="nav-logo">
-          <div className="navbar__logo-icon">
-            <Stethoscope size={22} />
-          </div>
-          <div className="navbar__logo-text">
-            <span className="navbar__logo-name">K.B.Guttedar</span>
-            <span className="navbar__logo-tag">Scientific Research & Academic Solutions</span>
-          </div>
+          <img src="/dr gutterdar.webp" alt="Dr. Guttedar Logo" className="navbar__image-logo" />
+          <Logo className="custom-logo--nav" />
         </Link>
 
         <div className={`navbar__links ${isMobileOpen ? 'navbar__links--open' : ''}`}>
           <div className="navbar__mobile-header">
             <Link to="/" className="navbar__logo" onClick={() => setIsMobileOpen(false)}>
-              <div className="navbar__logo-icon">
-                <Stethoscope size={22} />
-              </div>
-              <div className="navbar__logo-text">
-                <span className="navbar__logo-name">K.B.Guttedar</span>
-                <span className="navbar__logo-tag">Scientific Research & Academic Solutions</span>
-              </div>
+              <img src="/dr gutterdar.webp" alt="Dr. Guttedar Logo" className="navbar__image-logo" />
+              <Logo className="custom-logo--nav" />
             </Link>
             <button
               className="navbar__close-btn"

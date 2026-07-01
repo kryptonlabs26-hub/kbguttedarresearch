@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Stethoscope, Mail, Phone, MapPin, ArrowUpRight, Heart, User } from 'lucide-react';
+import Logo from '../Logo/Logo';
 import './Footer.css';
 
 const quickLinks = [
@@ -26,13 +27,7 @@ export default function Footer() {
           <div className="footer__grid">
             <div className="footer__brand">
               <Link to="/" className="footer__logo">
-                <div className="footer__logo-icon">
-                  <Stethoscope size={20} />
-                </div>
-                <div className="footer__logo-text">
-                  <span className="footer__logo-name">K.B.Guttedar</span>
-                  <span className="footer__logo-tag">Scientific Research Publication & Academic Solutions</span>
-                </div>
+                <Logo className="custom-logo--footer" />
               </Link>
               <p className="footer__desc">
                 Your trusted partner for medical research, thesis writing, data analysis, 

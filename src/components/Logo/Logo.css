@@ -1,0 +1,93 @@
+.custom-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-heading);
+  line-height: 1;
+  text-align: center;
+  user-select: none;
+}
+
+.custom-logo__main {
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: baseline;
+}
+
+.custom-logo__kb {
+  color: var(--primary-900);
+}
+
+.custom-logo__guttedar {
+  background: linear-gradient(to right, var(--primary-600), var(--accent-500));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.custom-logo__research-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: -2px;
+  margin-bottom: 6px;
+}
+
+.custom-logo__research {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--primary-900);
+  margin-right: -0.12em; /* Compensate for last letter spacing */
+}
+
+.custom-logo__line {
+  height: 1.5px;
+  width: 40px;
+  position: relative;
+}
+
+.custom-logo__line--left {
+  background-color: var(--primary-900);
+}
+
+.custom-logo__line--right {
+  background-color: var(--accent-600);
+}
+
+.custom-logo__dot {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.custom-logo__dot--left {
+  background-color: var(--primary-900);
+  left: 0;
+}
+
+.custom-logo__dot--right {
+  background-color: var(--accent-600);
+  right: 0;
+}
+
+/* Scaling variants if needed for different contexts */
+.custom-logo--nav .custom-logo__main { font-size: 1.6rem; }
+.custom-logo--nav .custom-logo__research { font-size: 0.55rem; }
+.custom-logo--nav .custom-logo__line { width: 30px; }
+
+.custom-logo--footer .custom-logo__main { font-size: 1.8rem; }
+.custom-logo--footer .custom-logo__kb { color: var(--white); }
+.custom-logo--footer .custom-logo__research { color: var(--white); font-size: 0.65rem; }
+.custom-logo--footer .custom-logo__line--left,
+.custom-logo--footer .custom-logo__line--right,
+.custom-logo--footer .custom-logo__dot--left,
+.custom-logo--footer .custom-logo__dot--right {
+  background-color: var(--white);
+}
+.custom-logo--footer .custom-logo__research-wrapper { gap: 10px; }

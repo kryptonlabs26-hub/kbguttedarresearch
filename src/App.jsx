@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+import FloatingWhatsApp from './components/FloatingWhatsApp/FloatingWhatsApp';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import ThesisServices from './pages/ThesisServices/ThesisServices';
@@ -19,6 +20,7 @@ function App() {
         <Route path="/publication-services" element={<PublicationServices />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <FloatingWhatsApp />
       <Footer />
     </Router>
   );

@@ -43,6 +43,13 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    
+    const message = `*New Inquiry*\n\n*Name:* ${form.name}\n*Email:* ${form.email}\n*Phone:* ${form.phone}\n*Service:* ${form.service}\n*Message:* ${form.message}`;
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/918050366281?text=${encodedMessage}`;
+    
+    window.open(whatsappUrl, '_blank');
+
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 4000);
     setForm({ name: '', email: '', phone: '', service: '', message: '' });
